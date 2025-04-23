@@ -3,7 +3,7 @@ import SlideInSection from "./SlideInSection";
 import { GraduationCap, BookOpen, Users } from "lucide-react";
 const Benefits = () => {
   return (
-    <div className="flex flex-col w-full min-h-[50vh] px-10 mb-36">
+    <div className="flex flex-col w-full min-h-[50vh] px-10 mb-36" id="about">
       <div className="flex flex-col items-start">
         <p className="uppercase text-[12px] tracking-widest xl:tracking-[10px] p-2 bg-[#04cc04] text-center text-white mb-5">
           Our plans for you
