@@ -54,6 +54,9 @@ const Navbar = () => {
         } `}
         style={{ transition: "transform 0.3s ease, opacity 0.3s ease" }}
       >
+        <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)}>
+          <RiskCalculator />
+        </Modal>
         <li className="list-none w-full text-center p-4 hover:bg-green-600 hover:text-white transition-all cursor-pointer">
           <a href="#about" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             About

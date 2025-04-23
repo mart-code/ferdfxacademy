@@ -8,7 +8,7 @@ const Testimonials = () => {
   ];
 
   return (
-    <div className="flex flex-col items-center justify-center w-full gap-8 px-6 py-12">
+    <div className="flex flex-col items-center justify-center w-full gap-8 px-6 py-12 mb-35">
       <p className="uppercase text-[12px] tracking-widest xl:tracking-[10px] p-2 bg-[#04cc04] text-white">
         Our Results
       </p>
