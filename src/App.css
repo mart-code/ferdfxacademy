@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+* {
+  font-family: "General Sans", sans-serif;
+}
+
+.btn {
+  @apply relative px-6 py-3 font-semibold rounded-md transition-all duration-300 ease-in-out flex items-center gap-2 overflow-hidden;
+}
+
+/* 🔥 Primary Button with Sliding Arrow */
+.btn-primary {
+  @apply bg-gradient-to-r from-[#04cc04] to-green-600 text-white shadow-lg 
+         hover:from-green-500 hover:to-green-700 hover:shadow-xl
+         focus:ring-4 focus:ring-green-300 active:shadow-md
+         disabled:opacity-50 disabled:cursor-not-allowed;
+}
+
+/* 🎨 Outline Button with Arrow Effect */
+.btn-outline {
+  @apply border-2 border-[#04cc04] text-[#04cc04] bg-transparent 
+         hover:bg-[#04cc04] hover:text-white hover:shadow-lg 
+         focus:ring focus:ring-green-300  transition-all;
+}
+
+/* ➡️ Arrow Animation */
+.btn .arrow {
+  @apply hidden transition-transform duration-300 ease-in-out transform translate-x-0 opacity-0;
+}
+
+.btn:hover .arrow {
+  @apply translate-x-1 inline-block transition-all ease-in-out duration-300 opacity-100;
+}
