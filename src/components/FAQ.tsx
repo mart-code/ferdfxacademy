@@ -3,7 +3,9 @@ import { Plus, Minus } from "lucide-react";
 const faqs = [
   {
     question: "How much does your course cost?",
-    answer: "Online Class ($150), Physical Class ($250), One-on-One Mentorship ($500)",
+    answer: `Online Class ($150)<br/>
+             Physical Class ($250)<br/>
+             One-on-One Mentorship ($500)`,
   },
   {
     question: "How long does your class last and what means is the teaching?",
@@ -11,12 +13,13 @@ const faqs = [
   },
   {
     question: "Do you have a physical office?",
-    answer: "Yes, we currently have the biggest trading floor in Osun State located at Obafemi Awolowo University, Ile-Ife",
+    answer:
+      "Yes, we currently have the biggest trading floor in Osun State located at Obafemi Awolowo University, Ile-Ife",
   },
   {
     question: "Do you give signals?",
-    answer: "No, but we drop general signal on the community group"
-  }
+    answer: "No, but we drop general signal on the community group",
+  },
 ];
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
@@ -50,7 +53,10 @@ const FAQ = () => {
               )}
             </div>
             {openIndex === index && (
-              <p className="mt-2 text-gray-600">{faq.answer}</p>
+              <p
+                className="mt-2 text-gray-600"
+                dangerouslySetInnerHTML={{ __html: faq.answer }}
+              />
             )}
           </div>
         ))}
