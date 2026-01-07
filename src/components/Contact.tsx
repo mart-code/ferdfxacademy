@@ -18,7 +18,7 @@ const Contact = () => {
         </p>
       </div>
       <form
-        action={`https://formsubmit.co/ferdinandokafor071@gmail.com`}
+        action="https://formsubmit.co/ferdinandokafor071@gmail.com"
         className="flex flex-col items-start w-full shadow-lg p-10"
         method="POST"
         name="contact"
